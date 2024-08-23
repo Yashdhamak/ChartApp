@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart App</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Number Submission Chart</h1>
+
+    <form action="/submit" method="POST">
+        <input type="number" name="number" min="1" max="100" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <canvas id="myChart"></canvas>
+
+    <script src="/script.js"></script>
+</body>
+</html>
